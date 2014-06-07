@@ -22,18 +22,18 @@ Table of Contents
 
 ---
 
-## Introduction {#intro}
+## Introduction ## {#intro}
 
 The purpose of this guide is to provide guidelines for how code produced by FRC should be formatted, how projects should be laid out, and how projects should be QA'd before release.
 
-## Code Formatting {#formatting}
+## Code Formatting ## {#formatting}
 
-### CSS/SCSS {#css}
+### CSS/SCSS ### {#css}
 
 - Use 2 spaces for indentation:
 ```css
 .foo {
-    font-weight: bold;
+  font-weight: bold;
 }
 ```
 - Use OOCSS principles. Figure out which properties elements share in common, then write overrides to handle the differences.
