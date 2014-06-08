@@ -7,7 +7,7 @@ task :build do
   readme = base.join('README.md').read
   html   = GitHub::Markdown.render readme
 
-  build.mkpath unless build.directory
+  build.mkpath unless build.directory?
 
   build.join('index.html').open('w') do |file|
     file.write html
