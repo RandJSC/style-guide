@@ -8,9 +8,9 @@ by Mike Green (@mikedamage)
 Table of Contents
 -----------------
 
-- [Introduction](#intro)
-- [Code Formatting](#formatting)
-  - [CSS/SCSS](#css)
+- [Introduction](#introduction)
+- [Code Formatting](#code-formatting)
+  - [CSS/SCSS](#cssscss)
   - [CoffeeScript](#coffeescript)
   - [HTML5](#html5)
   - [JavaScript](#javascript)
@@ -22,13 +22,13 @@ Table of Contents
 
 ---
 
-## Introduction ## {#intro}
+## Introduction
 
 The purpose of this guide is to provide guidelines for how code produced by FRC should be formatted, how projects should be laid out, and how projects should be QA'd before release.
 
-## Code Formatting ## {#formatting}
+## Code Formatting
 
-### CSS/SCSS ### {#css}
+### CSS/SCSS
 
 - Use 2 spaces for indentation:
 ```css
@@ -36,6 +36,6 @@ The purpose of this guide is to provide guidelines for how code produced by FRC 
   font-weight: bold;
 }
 ```
-- Use OOCSS principles. Figure out which properties elements share in common, then write overrides to handle the differences.
+- Use [OOCSS](http://www.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/) principles. Figure out which properties elements share in common, then write overrides to handle the differences.
 - If you notice that you're repeating yourself, you're doing it wrong.
 - Be as specific as possible with selectors. Don't be afraid of `>`.
