@@ -34,11 +34,18 @@ The purpose of this guide is to provide guidelines for how code produced by FRC 
 - Use [OOCSS](http://www.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/) principles. Figure out which properties elements share in common, then write overrides to handle the differences.
 - If you notice that you're repeating yourself, you're doing it wrong.
 - Be as specific as possible with selectors. Don't be afraid of `>`.
+
+#### SCSS
+
+- Put mix-ins at the top of the rule set.
+- Insert line breaks between rule sets, regardless of their nesting level
 - If you need to use a style repeatedly with minor variations, write a Sass mixin.
 - If you need to use a style repeatedly with no variations, use a non-printing `%` class and include it with `@extend`.
 - Split styles into partials named for what they style (i.e. `_header.scss`).
 
 #### Examples
+
+##### CSS
 
 ```css
 /* Indent with 2 spaces */
@@ -55,6 +62,18 @@ ul {
 ul.no-bullets {
   list-style: none;
   padding-left: 0;
+}
+```
+
+##### SCSS
+
+```scss
+// Put mix-ins at the top of the rule set
+.foo {
+  @include clearfix;
+  @include span-columns(5 of 12);
+  font-weight: bold;
+  text-decoration: underline;
 }
 ```
 
